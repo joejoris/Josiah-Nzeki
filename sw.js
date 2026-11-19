@@ -1,6 +1,6 @@
 /* Offline support for Josiah Nzeki Mutisya's portfolio.
    Increment CACHE_NAME whenever site files change. */
-const CACHE_NAME = 'josiah-portfolio-v4';
+const CACHE_NAME = 'josiah-portfolio-v5';
 
 const CORE_ASSETS = [
   './',

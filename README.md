@@ -18,8 +18,8 @@ Built with plain **HTML, CSS, and JavaScript**. No build step or dependencies re
 - `contact.html` — Contact details, WhatsApp, vCard and enquiry form
 - `cv.html` — CV viewer page with the official PDF embedded
 - `404.html` — Custom not-found page
-- `css/style.css` — Shared design system, dark theme and accessibility styles
-- `js/main.js` — Navigation, filters, contact form, analytics hooks, theme controls, animations, scroll UI
+- `css/style.css` — Shared design system and accessibility styles
+- `js/main.js` — Navigation, filters, contact form, analytics hooks, text-size and contrast controls, animations, scroll UI
 - `sw.js` — Service worker for offline access
 - `manifest.webmanifest` — PWA app manifest
 - `assets/Josiah_Nzeki_Mutisya_CV.pdf` — Official CV supplied by Josiah
@@ -58,7 +58,7 @@ The site uses details from `CV JOSIAH NZEKI MUTISYA.pdf`:
 - Downloadable CV PDF, one-page portfolio summary and vCard; Print / Save PDF button on the CV page
 - Responsive layout for phones, tablets and desktop, with touch-friendly controls and a mobile menu that includes CV and Portfolio Hub links
 - Optional Plausible/GA4 analytics with custom event tracking
-- Dark mode, text-size and high-contrast controls saved on the device
+- Text-size and high-contrast controls saved on the device (light theme only)
 - Installable PWA with offline access to pages and documents
 - SEO metadata, Open Graph tags, structured data, `robots.txt`, `sitemap.xml` and custom 404 page
 
@@ -82,7 +82,7 @@ Upload all files, including `404.html`, `robots.txt`, `sitemap.xml`, `manifest.w
 
 ## Notes
 
-- Dark mode follows the device preference until the visitor chooses a theme in the `Aa` control.
+- The site uses the light theme only. The `Aa` control offers text size and high contrast.
 - The contact form sends directly from the browser and falls back to an email draft if the form service is unavailable.
 - If you change the email address, update `SITE_CONFIG.contactEmail` and `SITE_CONFIG.contactEndpoint` in `js/main.js`, plus the PDF/vCard and the inline JSON-LD in `index.html`.
 - The site is responsive, keyboard accessible, respects reduced-motion preferences, and offers adjustable text size and contrast.

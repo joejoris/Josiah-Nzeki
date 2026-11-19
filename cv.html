@@ -4,9 +4,6 @@
   <script>
     (function () {
       try {
-        var theme = localStorage.getItem("portfolio-theme");
-        if (!theme) theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-        document.documentElement.dataset.theme = theme;
         var contrast = localStorage.getItem("portfolio-contrast");
         if (contrast) document.documentElement.dataset.contrast = contrast;
         var size = localStorage.getItem("portfolio-text-size");

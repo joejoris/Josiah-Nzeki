@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
   whatsapp.textContent = "WA";
   document.body.appendChild(whatsapp);
 
-  // Accessibility controls: theme, text size and contrast
+  // Accessibility controls: text size and contrast
   const storage = {
     get: function (key, fallback) {
       try { return localStorage.getItem(key) || fallback; } catch (e) { return fallback; }
@@ -151,11 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
   a11yPanel.setAttribute("aria-label", "Accessibility controls");
   a11yPanel.innerHTML = [
     "<h3>Display settings</h3>",
-    '<div class="a11y-row"><span>Theme</span><div class="a11y-options">',
-    '<button class="a11y-btn" type="button" data-setting="theme" data-value="light" aria-label="Light theme">Light</button>',
-    '<button class="a11y-btn" type="button" data-setting="theme" data-value="dark" aria-label="Dark theme">Dark</button>',
-    '<button class="a11y-btn" type="button" data-setting="theme" data-value="auto" aria-label="Follow device theme">Auto</button>',
-    "</div></div>",
     '<div class="a11y-row"><span>Text size</span><div class="a11y-options">',
     '<button class="a11y-btn" type="button" data-setting="size" data-value="100%" aria-label="Default text size">A</button>',
     '<button class="a11y-btn" type="button" data-setting="size" data-value="112.5%" aria-label="Large text size">A+</button>',
@@ -179,18 +174,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  function applyTheme(value, silent) {
-    const theme = value === "auto"
-      ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
-      : value;
-    document.documentElement.dataset.theme = theme;
-
-    const themeMeta = document.querySelector('meta[name="theme-color"]');
-    if (themeMeta) themeMeta.setAttribute("content", theme === "dark" ? "#091625" : "#0b2545");
-
-    markActive("theme", value);
-    if (!silent) trackEvent("theme_change", { theme: value });
-  }
+  // Clear the old theme preference so returning visitors stay on the light design.
+  try { localStorage.removeItem("portfolio-theme"); } catch (e) {}
+  delete document.documentElement.dataset.theme;
 
   function applyTextSize(value, silent) {
     document.documentElement.style.fontSize = value;
@@ -208,7 +194,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!silent) trackEvent("contrast_change", { mode: value });
   }
 
-  applyTheme(storage.get("portfolio-theme", "auto"), true);
   applyTextSize(storage.get("portfolio-text-size", "100%"), true);
   applyContrast(storage.get("portfolio-contrast", "normal"), true);
 
@@ -225,10 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const setting = button.dataset.setting;
     const value = button.dataset.value;
 
-    if (setting === "theme") {
-      storage.set("portfolio-theme", value);
-      applyTheme(value);
-    } else if (setting === "size") {
+    if (setting === "size") {
       storage.set("portfolio-text-size", value);
       applyTextSize(value);
     } else if (setting === "contrast") {
@@ -253,14 +235,6 @@ document.addEventListener("DOMContentLoaded", function () {
       a11yFab.focus();
     }
   });
-
-  // Keep Auto theme in sync with the device preference while the page is open.
-  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
-  function onSystemThemeChange() {
-    if (storage.get("portfolio-theme", "auto") === "auto") applyTheme("auto", true);
-  }
-  if (systemTheme.addEventListener) systemTheme.addEventListener("change", onSystemThemeChange);
-  else if (systemTheme.addListener) systemTheme.addListener(onSystemThemeChange);
 
   // Offline support
   if ("serviceWorker" in navigator && /^https?:$/.test(window.location.protocol)) {
