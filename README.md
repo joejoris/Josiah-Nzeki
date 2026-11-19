@@ -65,10 +65,12 @@ The site uses details from `CV JOSIAH NZEKI MUTISYA.pdf`:
 ## Live site
 
 - **Repository:** https://github.com/joejoris/Josiah-Nzeki
-- **GitHub Pages URL:** https://joejoris.github.io/Josiah-Nzeki/
-- Canonical, Open Graph, sitemap, robots.txt, vCard and one-page PDF URLs already point to this address.
+- **GitHub Pages:** https://joejoris.github.io/Josiah-Nzeki/
+- **Netlify:** https://josiah-nzeki.netlify.app/ (auto-deploys from the `main` branch)
 
-Enable **Settings → Pages → Build and deployment → Source: Deploy from a branch → main / root** in the repository if Pages is not active yet.
+Canonical, Open Graph, sitemap, robots.txt, vCard and one-page PDF URLs point to the GitHub Pages address. If you make Netlify the primary site, replace `https://joejoris.github.io/Josiah-Nzeki` with `https://josiah-nzeki.netlify.app` across the HTML files, `sitemap.xml`, `robots.txt` and the one-page PDF.
+
+Enable **Settings → Pages → Build and deployment → Source: Deploy from a branch → main / root** in the repository if Pages is not active yet. `netlify.toml` publishes the repository root as a static site.
 
 ## Before publishing
 
