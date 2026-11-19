@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-label="Illustrative office network topology">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071c37"/><stop offset="1" stop-color="#0f6f78"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="380" rx="18" fill="url(#bg2)"/>
+  <g stroke="#ffffff" stroke-opacity="0.08" fill="none">
+    <path d="M0 90 200 90 280 20"/><path d="M700 360 780 280 900 280"/>
+  </g>
+  <text x="40" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Office network setup</text>
+  <text x="40" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9cece9">INSTALLATION · CONFIGURATION · MAINTENANCE</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <g stroke="#63d0b2" stroke-width="2.5" stroke-opacity="0.85" fill="none">
+      <path d="M450 122 V170"/>
+      <path d="M450 230 V280 M260 280 H640 M260 280 V312 M450 280 V312 M640 280 V312"/>
+    </g>
+    <g>
+      <rect x="370" y="90" width="160" height="52" rx="13" fill="#ffffff" fill-opacity="0.09" stroke="#63d0b2" stroke-opacity="0.7"/>
+      <text x="450" y="121" font-size="16" font-weight="700" fill="#ffffff">Router</text>
+    </g>
+    <g>
+      <rect x="350" y="170" width="200" height="60" rx="14" fill="#ffffff" fill-opacity="0.1" stroke="#ffd89b" stroke-opacity="0.7"/>
+      <text x="450" y="199" font-size="17" font-weight="700" fill="#ffffff">Switch</text>
+      <text x="450" y="219" font-size="12" fill="#cfe3f4">Central connection</text>
+    </g>
+    <g>
+      <rect x="190" y="312" width="140" height="46" rx="12" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.22"/>
+      <text x="260" y="341" font-size="14" font-weight="700" fill="#ffffff">Workstation</text>
+      <rect x="380" y="312" width="140" height="46" rx="12" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.22"/>
+      <text x="450" y="341" font-size="14" font-weight="700" fill="#ffffff">Laptop</text>
+      <rect x="570" y="312" width="140" height="46" rx="12" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.22"/>
+      <text x="640" y="341" font-size="14" font-weight="700" fill="#ffffff">Printer</text>
+    </g>
+  </g>
+  <text x="40" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfe3f4">My role: install equipment · support configuration · check connectivity · maintain</text>
+</svg>

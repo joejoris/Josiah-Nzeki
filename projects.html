@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("portfolio-theme");
+        if (!theme) theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+        var contrast = localStorage.getItem("portfolio-contrast");
+        if (contrast) document.documentElement.dataset.contrast = contrast;
+        var size = localStorage.getItem("portfolio-text-size");
+        if (size) document.documentElement.style.fontSize = size;
+      } catch (e) {}
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Josiah Nzeki Mutisya</title>
+  <meta name="description" content="Internship and personal IT projects by Josiah Nzeki Mutisya, including Sage Inventory support, network installation, and technical support.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0b2545">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="canonical" href="https://joejoris.github.io/Josiah-Nzeki/projects.html">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Josiah Nzeki Mutisya | IT Portfolio">
+  <meta property="og:title" content="Projects | Josiah Nzeki Mutisya">
+  <meta property="og:description" content="Internship and personal IT projects by Josiah Nzeki Mutisya, including Sage Inventory support, network installation, and technical support.">
+  <meta property="og:url" content="https://joejoris.github.io/Josiah-Nzeki/projects.html">
+  <meta property="og:image" content="https://joejoris.github.io/Josiah-Nzeki/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects | Josiah Nzeki Mutisya">
+  <meta name="twitter:description" content="Internship and personal IT projects by Josiah Nzeki Mutisya, including Sage Inventory support, network installation, and technical support.">
+  <meta name="twitter:image" content="https://joejoris.github.io/Josiah-Nzeki/assets/og-image.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html" aria-label="Josiah Nzeki Mutisya home">
+        <span class="brand-mark">JN</span>
+        <span class="brand-text"><strong>Josiah Nzeki Mutisya</strong><span>IT Portfolio</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="about.html" data-page="about.html">About</a>
+        <a href="projects.html" data-page="projects.html">Projects</a>
+        <a href="experience.html" data-page="experience.html">Experience</a>
+        <a href="certifications.html" data-page="certifications.html">Certifications</a>
+        <a href="contact.html" data-page="contact.html">Contact</a>
+      
+        <a class="mobile-only" href="cv.html" data-page="cv.html">View CV</a>
+        <a class="mobile-only" href="portfolio.html" data-page="portfolio.html">Portfolio Hub</a>
+</nav>
+      <div class="nav-actions"><a class="btn btn-primary btn-small" href="cv.html">View CV</a></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <div class="container">
+        <span class="kicker">Portfolio</span>
+        <h1>Projects</h1>
+        <p>Selected work from my IT internship and personal projects, showing how I apply technical skills in practical settings.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter projects">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Projects</button>
+          <button class="filter-btn" type="button" data-filter="internship" aria-pressed="false">Internship</button>
+          <button class="filter-btn" type="button" data-filter="personal" aria-pressed="false">Personal</button>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card project-card reveal" data-category="internship">
+            <div class="project-meta">Internship Project</div>
+            <h3>Inventory Control with Sage</h3>
+            <p>Supported inventory control at Tri Clover Industries Ltd by tracking stock levels and participating in stock-taking activities using Sage Inventory software.</p>
+            <div class="tag-list"><span class="tag">Sage Inventory</span><span class="tag">Stock Control</span><span class="tag">Business Systems</span></div>
+            <div class="project-links"><a href="project-sage-inventory.html">View details &rarr;</a></div>
+          </article>
+
+          <article class="card project-card reveal" data-category="internship">
+            <div class="project-meta">Internship Project</div>
+            <h3>Network Installation &amp; Configuration</h3>
+            <p>Assisted with routine IT maintenance tasks, including network installation and configuration, in a working office environment.</p>
+            <div class="tag-list"><span class="tag">Networking</span><span class="tag">Installation</span><span class="tag">IT Maintenance</span></div>
+            <div class="project-links"><a href="project-network-installation.html">View details &rarr;</a></div>
+          </article>
+
+          <article class="card project-card reveal" data-category="internship">
+            <div class="project-meta">Internship Project</div>
+            <h3>IT Support &amp; Systems Operation</h3>
+            <p>Contributed to the smooth operation of inventory systems and provided basic technical support while developing practical experience in IT operations.</p>
+            <div class="tag-list"><span class="tag">Technical Support</span><span class="tag">IT Operations</span><span class="tag">Systems</span></div>
+            <div class="project-links"><a href="project-it-support.html">View details &rarr;</a></div>
+          </article>
+
+          <article class="card project-card reveal" data-category="personal">
+            <div class="project-meta">Personal Project</div>
+            <h3>Personal Portfolio Website</h3>
+            <p>Built this responsive multi-page website to present skills, internship experience, qualifications, and contact details in a clean, accessible format.</p>
+            <div class="tag-list"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Accessibility</span></div>
+            <div class="project-links"><a href="index.html">View site &rarr;</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Have a project in mind?</h2>
+            <p>I am interested in collaborative work, internships, and junior IT opportunities.</p>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Contact me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Josiah Nzeki Mutisya</strong><small>Diploma in Information Technology &middot; Portfolio</small></div>
+      <div class="footer-links"><a href="projects.html">Projects</a><a href="certifications.html">Certifications</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></div>
+      <small>&copy; <span id="year">2026</span> Josiah Nzeki Mutisya</small>
+    </div>
+  </footer>
+</body>
+</html>

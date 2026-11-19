@@ -1,0 +1,18 @@
+# Keep text files consistent across Windows/Linux and avoid corrupting binaries.
+* text=auto eol=lf
+
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.xml  text eol=lf
+*.txt  text eol=lf
+*.md   text eol=lf
+*.svg  text eol=lf
+*.webmanifest text eol=lf
+*.vcf  text eol=lf
+
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

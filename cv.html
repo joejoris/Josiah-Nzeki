@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("portfolio-theme");
+        if (!theme) theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+        var contrast = localStorage.getItem("portfolio-contrast");
+        if (contrast) document.documentElement.dataset.contrast = contrast;
+        var size = localStorage.getItem("portfolio-text-size");
+        if (size) document.documentElement.style.fontSize = size;
+      } catch (e) {}
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Josiah Nzeki Mutisya</title>
+  <meta name="description" content="Curriculum vitae of Josiah Nzeki Mutisya, Diploma in Information Technology graduate from KCA University.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0b2545">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="canonical" href="https://joejoris.github.io/Josiah-Nzeki/cv.html">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Josiah Nzeki Mutisya | IT Portfolio">
+  <meta property="og:title" content="CV | Josiah Nzeki Mutisya">
+  <meta property="og:description" content="Curriculum vitae of Josiah Nzeki Mutisya, Diploma in Information Technology graduate from KCA University.">
+  <meta property="og:url" content="https://joejoris.github.io/Josiah-Nzeki/cv.html">
+  <meta property="og:image" content="https://joejoris.github.io/Josiah-Nzeki/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CV | Josiah Nzeki Mutisya">
+  <meta name="twitter:description" content="Curriculum vitae of Josiah Nzeki Mutisya, Diploma in Information Technology graduate from KCA University.">
+  <meta name="twitter:image" content="https://joejoris.github.io/Josiah-Nzeki/assets/og-image.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header no-print">
+    <div class="nav-container">
+      <a class="brand" href="index.html" aria-label="Josiah Nzeki Mutisya home">
+        <span class="brand-mark">JN</span>
+        <span class="brand-text"><strong>Josiah Nzeki Mutisya</strong><span>IT Portfolio</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="about.html" data-page="about.html">About</a>
+        <a href="projects.html" data-page="projects.html">Projects</a>
+        <a href="experience.html" data-page="experience.html">Experience</a>
+        <a href="certifications.html" data-page="certifications.html">Certifications</a>
+        <a href="contact.html" data-page="contact.html">Contact</a>
+      
+        <a class="mobile-only" href="portfolio.html" data-page="portfolio.html">Portfolio Hub</a>
+</nav>
+      <div class="nav-actions"><a class="btn btn-primary btn-small" href="cv.html">View CV</a></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro no-print">
+      <div class="container">
+        <span class="kicker">Credential</span>
+        <h1>Curriculum Vitae</h1>
+        <p>View or download the official CV of Josiah Nzeki Mutisya.</p>
+      </div>
+    </section>
+
+    <section class="section no-print">
+      <div class="container">
+        <div class="cv-toolbar">
+          <a class="btn btn-outline btn-small" href="index.html">&larr; Back to portfolio</a>
+          <a class="btn btn-outline btn-small" href="assets/Josiah_Nzeki_Mutisya_CV.pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+          <a class="btn btn-primary btn-small" href="assets/Josiah_Nzeki_Mutisya_CV.pdf" download>Download PDF</a>
+          <button class="btn btn-outline btn-small" id="print-cv" type="button">Print / Save PDF</button>
+          <a class="btn btn-outline btn-small" href="assets/Josiah_Nzeki_Mutisya_Portfolio.pdf" download>One-page summary</a>
+        </div>
+
+        <div class="cv-frame reveal" style="margin-top: 18px;">
+          <object class="cv-embed" data="assets/Josiah_Nzeki_Mutisya_CV.pdf" type="application/pdf" aria-label="Embedded CV PDF">
+            <p style="padding: 24px; text-align: center; color: var(--muted);">
+              Your browser cannot display the PDF here.
+              <a href="assets/Josiah_Nzeki_Mutisya_CV.pdf" target="_blank" rel="noopener noreferrer">Open the CV in a new tab</a>.
+            </p>
+          </object>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="kicker">At a Glance</span>
+          <h2>CV highlights</h2>
+          <p>A quick summary of the information contained in the attached CV.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">IT</div>
+            <h3>Diploma in Information Technology</h3>
+            <p>KCA University &middot; 2021 &ndash; 2026. Practical coursework in programming, network design, computer support, and data structures.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">EX</div>
+            <h3>IT Internship Experience</h3>
+            <p>IT Intern at Tri Clover Industries Ltd, Nairobi &middot; June 2025 &ndash; August 2025, focused on inventory systems, networks, and technical support.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">SK</div>
+            <h3>Core Strengths</h3>
+            <p>Information technology, inventory management systems, network installation, technical support, communication, teamwork, and problem solving.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Would like to talk?</h2>
+            <p>Reach out using the contact details provided in the CV or through the contact page.</p>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Contact me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Josiah Nzeki Mutisya</strong><small>Diploma in Information Technology &middot; KCA University</small></div>
+      <div class="footer-links"><a href="projects.html">Projects</a><a href="certifications.html">Certifications</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></div>
+      <small>&copy; <span id="year">2026</span> Josiah Nzeki Mutisya</small>
+    </div>
+  </footer>
+</body>
+</html>

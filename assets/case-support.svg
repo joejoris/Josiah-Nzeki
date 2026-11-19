@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-label="Technical support workflow">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071c37"/><stop offset="1" stop-color="#10556d"/>
+    </linearGradient>
+    <marker id="arrow3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#63d0b2"/>
+    </marker>
+  </defs>
+  <rect width="900" height="380" rx="18" fill="url(#bg3)"/>
+  <text x="40" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Technical support flow</text>
+  <text x="40" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9cece9">COMMUNICATE · DIAGNOSE · RESOLVE · RECORD</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <g>
+      <circle cx="112" cy="190" r="46" fill="#ffffff" fill-opacity="0.08" stroke="#ffd89b" stroke-width="2"/>
+      <text x="112" y="186" font-size="26" font-weight="700" fill="#ffd89b">01</text>
+      <text x="112" y="272" font-size="15" font-weight="700" fill="#ffffff">Report</text>
+      <text x="112" y="294" font-size="12" fill="#cfe3f4">User explains issue</text>
+    </g>
+    <path d="M165 190 H215" stroke="#63d0b2" stroke-width="3" marker-end="url(#arrow3)"/>
+    <g>
+      <circle cx="268" cy="190" r="46" fill="#ffffff" fill-opacity="0.08" stroke="#63d0b2" stroke-width="2"/>
+      <text x="268" y="186" font-size="26" font-weight="700" fill="#9cece9">02</text>
+      <text x="268" y="272" font-size="15" font-weight="700" fill="#ffffff">Diagnose</text>
+      <text x="268" y="294" font-size="12" fill="#cfe3f4">Gather facts &amp; test</text>
+    </g>
+    <path d="M321 190 H371" stroke="#63d0b2" stroke-width="3" marker-end="url(#arrow3)"/>
+    <g>
+      <circle cx="424" cy="190" r="46" fill="#ffffff" fill-opacity="0.08" stroke="#63d0b2" stroke-width="2"/>
+      <text x="424" y="186" font-size="26" font-weight="700" fill="#9cece9">03</text>
+      <text x="424" y="272" font-size="15" font-weight="700" fill="#ffffff">Resolve</text>
+      <text x="424" y="294" font-size="12" fill="#cfe3f4">Fix or escalate</text>
+    </g>
+    <path d="M477 190 H527" stroke="#63d0b2" stroke-width="3" marker-end="url(#arrow3)"/>
+    <g>
+      <circle cx="580" cy="190" r="46" fill="#ffffff" fill-opacity="0.08" stroke="#ffd89b" stroke-width="2"/>
+      <text x="580" y="186" font-size="26" font-weight="700" fill="#ffd89b">04</text>
+      <text x="580" y="272" font-size="15" font-weight="700" fill="#ffffff">Confirm</text>
+      <text x="580" y="294" font-size="12" fill="#cfe3f4">Check with user</text>
+    </g>
+    <path d="M633 190 H683" stroke="#63d0b2" stroke-width="3" marker-end="url(#arrow3)"/>
+    <g>
+      <circle cx="736" cy="190" r="46" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+      <text x="736" y="186" font-size="26" font-weight="700" fill="#ffffff">05</text>
+      <text x="736" y="272" font-size="15" font-weight="700" fill="#ffffff">Record</text>
+      <text x="736" y="294" font-size="12" fill="#cfe3f4">Note the outcome</text>
+    </g>
+  </g>
+  <text x="40" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#cfe3f4">Guiding principle: clear communication and practical, well-documented resolutions.</text>
+</svg>

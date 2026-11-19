@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joejoris.github.io/Josiah-Nzeki/sitemap.xml

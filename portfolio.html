@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      try {
+        var theme = localStorage.getItem("portfolio-theme");
+        if (!theme) theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+        var contrast = localStorage.getItem("portfolio-contrast");
+        if (contrast) document.documentElement.dataset.contrast = contrast;
+        var size = localStorage.getItem("portfolio-text-size");
+        if (size) document.documentElement.style.fontSize = size;
+      } catch (e) {}
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Hub | Josiah Nzeki Mutisya</title>
+  <meta name="description" content="Browse the individual pages of Josiah Nzeki Mutisya's IT portfolio: about, projects, case studies, experience, qualifications, CV and contact.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0b2545">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="canonical" href="https://joejoris.github.io/Josiah-Nzeki/portfolio.html">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Josiah Nzeki Mutisya | IT Portfolio">
+  <meta property="og:title" content="Portfolio Hub | Josiah Nzeki Mutisya">
+  <meta property="og:description" content="Browse the individual pages of Josiah Nzeki Mutisya's IT portfolio.">
+  <meta property="og:url" content="https://joejoris.github.io/Josiah-Nzeki/portfolio.html">
+  <meta property="og:image" content="https://joejoris.github.io/Josiah-Nzeki/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio Hub | Josiah Nzeki Mutisya">
+  <meta name="twitter:description" content="Browse the individual pages of Josiah Nzeki Mutisya's IT portfolio.">
+  <meta name="twitter:image" content="https://joejoris.github.io/Josiah-Nzeki/assets/og-image.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="index.html" aria-label="Josiah Nzeki Mutisya home">
+        <span class="brand-mark">JN</span>
+        <span class="brand-text"><strong>Josiah Nzeki Mutisya</strong><span>IT Portfolio</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
+
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="index.html" data-page="index.html">Home</a>
+        <a href="about.html" data-page="about.html">About</a>
+        <a href="projects.html" data-page="projects.html">Projects</a>
+        <a href="experience.html" data-page="experience.html">Experience</a>
+        <a href="certifications.html" data-page="certifications.html">Certifications</a>
+        <a href="contact.html" data-page="contact.html">Contact</a>
+      
+        <a class="mobile-only" href="cv.html" data-page="cv.html">View CV</a>
+</nav>
+
+      <div class="nav-actions"><a class="btn btn-primary btn-small" href="cv.html">View CV</a></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <div class="container">
+        <span class="kicker">Portfolio Hub</span>
+        <h1>Explore the portfolio</h1>
+        <p>Each part of my portfolio has its own page. Choose a section below to learn more about my background, work, and experience.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="kicker">Start Here</span>
+          <h2>Quick links</h2>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">01</div>
+            <h3>About Me</h3>
+            <p>My background, education, skills, professional reference, and interests.</p>
+            <div class="project-links"><a href="about.html">Open About page &rarr;</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">02</div>
+            <h3>Projects</h3>
+            <p>Internship and personal projects, with links to each detailed case study.</p>
+            <div class="project-links"><a href="projects.html">Open Projects page &rarr;</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">03</div>
+            <h3>Experience</h3>
+            <p>My internship and training timeline, and how I apply my skills at work.</p>
+            <div class="project-links"><a href="experience.html">Open Experience page &rarr;</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="kicker">Case Studies</span>
+          <h2>Internship work in detail</h2>
+          <p>Each case study is a separate page with its own diagram and full breakdown.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="project-meta">Internship Case Study</div>
+            <h3>Inventory Control with Sage</h3>
+            <p>Tracking stock levels and taking part in stock-taking with Sage Inventory.</p>
+            <div class="case-visual" style="margin-top: 18px;">
+              <img src="assets/case-inventory.svg" alt="Illustration of the inventory control workflow: stock movement, Sage Inventory records, stock-taking and reliable records.">
+            </div>
+            <div class="project-links"><a href="project-sage-inventory.html">Read the case study &rarr;</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="project-meta">Internship Case Study</div>
+            <h3>Network Installation &amp; Configuration</h3>
+            <p>Assisting with network setup, configuration, and routine IT maintenance.</p>
+            <div class="case-visual" style="margin-top: 18px;">
+              <img src="assets/case-network.svg" alt="Illustrative office network topology showing a router, switch, workstations, laptop and printer.">
+            </div>
+            <div class="project-links"><a href="project-network-installation.html">Read the case study &rarr;</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="project-meta">Internship Case Study</div>
+            <h3>IT Support &amp; Systems Operation</h3>
+            <p>Supporting users and keeping business systems running smoothly.</p>
+            <div class="case-visual" style="margin-top: 18px;">
+              <img src="assets/case-support.svg" alt="Illustration of the technical support flow from reporting an issue to diagnosing, resolving, confirming and recording it.">
+            </div>
+            <div class="project-links"><a href="project-it-support.html">Read the case study &rarr;</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon">04</div>
+            <h3>Qualifications</h3>
+            <p>Diploma, KCSE, KCPE, driving licence, and diploma modules.</p>
+            <div class="project-links"><a href="certifications.html">Open Certifications page &rarr;</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">CV</div>
+            <h3>Curriculum Vitae</h3>
+            <p>View or download the official CV and the one-page portfolio summary.</p>
+            <div class="project-links"><a href="cv.html">Open CV page &rarr;</a></div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">@</div>
+            <h3>Contact</h3>
+            <p>Email, phone, WhatsApp, contact form, and downloadable vCard.</p>
+            <div class="project-links"><a href="contact.html">Open Contact page &rarr;</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2>Ready to discuss an opportunity?</h2>
+            <p>I am open to internships, graduate roles, and junior IT positions.</p>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Josiah Nzeki Mutisya</strong><small>Diploma in Information Technology &middot; IT Portfolio</small></div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <small>&copy; <span id="year">2026</span> Josiah Nzeki Mutisya</small>
+    </div>
+  </footer>
+</body>
+</html>
